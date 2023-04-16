@@ -1,0 +1,25 @@
+import java.util.*;
+class xylem 
+{
+	static Scanner s=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter the number");
+		int num=s.nextInt();
+		int last=num%10;
+		num=num/10;
+		int sum=0;
+		while (num>9)
+		{
+			sum=sum+(num%10);
+			num/=10;
+		}
+		int first_last=sum+last;
+		if (first_last==sum)
+		{
+			System.out.println("xylem number");
+		}else{
+			System.out.println("not xylem");
+		}
+	}
+}

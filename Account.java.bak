@@ -1,0 +1,41 @@
+class Account
+{
+	int account_number;
+	String ifsc;
+	Account(){
+		//li
+	}
+	Account(int acc,String i){
+		account_number=acc;
+		ifsc=i;
+	}
+}
+class LoanAccount extends Account
+{
+	double ammount;
+	LoanAccount(){
+		//super()
+	}
+	LoanAccount(int a,String i,double amm){
+		super(acc,i);
+		ammount=amm;
+	}
+	public void display(){
+		System.out.println("the account number is:"+account_number);
+		System.out.println("the ifsc code is:"+ifsc);
+		System.out.println("the ammount number:"+ammount);
+	}
+}
+class Twowheeler extends LoanAccount
+{
+	int reg_no;
+	void TwoWheeler(){
+		super(acc,i,amm);
+	}
+	void TwoWheeler(int acc,String i,double amm,int re){
+		reg_no=re;
+	}
+	public void show(){
+		System.out.println("reg_no:"+reg_no);
+	}
+}

@@ -1,0 +1,14 @@
+class div 
+{
+	public static void main(String[] args) 
+	{
+		int a=100;
+	    do{
+			if(a%4 & a%6)
+			{
+				System.out.println(a);
+			}
+			a--;
+		}while(a>=1 & a<=100);
+	}
+}

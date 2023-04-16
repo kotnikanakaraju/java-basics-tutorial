@@ -1,0 +1,9 @@
+class MasAccount 
+{
+	public static void main(String[] args) 
+	{
+		Twowheeler ref=new Twowheeler(67467464,56467,67468,1234);
+		ref.display();
+		System.out.println("Hello World!");
+	}
+}

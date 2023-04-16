@@ -1,0 +1,11 @@
+class widening4 
+{
+	public static void main(String[] args) 
+	{
+		long l=128;
+		float f=l;
+     	System.out.println("float:"+f);
+		double d=f;
+		System.out.println("double :"+d);
+	}
+}
